@@ -10,9 +10,9 @@ import com.sun.speech.freetts.audio.SingleFileAudioPlayer
 import javax.sound.sampled.AudioFileFormat.Type
 import org.arnoldc.ast._
 
-object Declaimer {
+object Declaimer {  
 
-  val p = new ArnoldParser
+  val p = new ArnoldParser   
 
   def declaim(root: RootNode, outputFile: String): Unit = {
     SpeechUtils.init("kevin16", outputFile)
@@ -147,7 +147,7 @@ object SpeechUtils {
     }
   }
 
-  def terminate() = {
+  def terminate() = {  
     synthesizer.deallocate()
   }
 
